@@ -1,0 +1,302 @@
+{
+  "paragraphs": [
+    {
+      "text": "%pyspark\nspark",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-16 06:56:31.764",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u003cpyspark.sql.session.SparkSession object at 0x7f5c5f050c10\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642313420727_260974698",
+      "id": "paragraph_1642313420727_260974698",
+      "dateCreated": "2022-01-16 06:10:20.727",
+      "dateStarted": "2022-01-16 06:56:31.766",
+      "dateFinished": "2022-01-16 06:56:31.778",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\nspark",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-16 06:56:45.316",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642316201252_1046227365",
+      "id": "paragraph_1642316201252_1046227365",
+      "dateCreated": "2022-01-16 06:56:41.252",
+      "status": "READY"
+    },
+    {
+      "title": "Create a github repo and push all notebook",
+      "text": "%sh\ngit clone https://github.com/Prashast18/data-stage-adidas.git\n\n#Zeppelin Notebooks needs to be exported to .ipynb file before pushing to Git\n\ncp -rf ../zeppelin/notebook/* .\ngit add -A\ngit commit -m \"init\"\ngit push",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-16 07:14:13.708",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "editorHide": false,
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Cloning into \u0027data-stage-adidas\u0027...\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642313459180_1929196311",
+      "id": "paragraph_1642313459180_1929196311",
+      "dateCreated": "2022-01-16 06:10:59.180",
+      "dateStarted": "2022-01-16 07:04:55.372",
+      "dateFinished": "2022-01-16 07:04:56.178",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\ncp notebook/case-study-adidas_2GSN9SU6G.zpln data-stage-adidas/",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-16 07:14:48.256",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "cp: cannot stat \u0027case-study-adidas_2GSN9SU6G.zpln\u0027: No such file or directory\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "ExitValue: 1"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642316708158_1763484997",
+      "id": "paragraph_1642316708158_1763484997",
+      "dateCreated": "2022-01-16 07:05:08.158",
+      "dateStarted": "2022-01-16 07:14:40.082",
+      "dateFinished": "2022-01-16 07:14:40.102",
+      "status": "ERROR"
+    },
+    {
+      "text": "%sh\ncd zeppelin-notebooks\ncp -rf ../zeppelin/notebook/* .\ngit add -A\ngit commit -m \"init\"\ngit push",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-16 06:31:00.332",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "ls: cannot open directory /home/ec2-user/: Permission denied\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "ExitValue: 2"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642313890321_809373436",
+      "id": "paragraph_1642313890321_809373436",
+      "dateCreated": "2022-01-16 06:18:10.321",
+      "dateStarted": "2022-01-16 06:25:32.851",
+      "dateFinished": "2022-01-16 06:25:32.873",
+      "status": "ERROR"
+    },
+    {
+      "text": "%sh\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-16 06:52:54.716",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642315974716_289863945",
+      "id": "paragraph_1642315974716_289863945",
+      "dateCreated": "2022-01-16 06:52:54.716",
+      "status": "READY"
+    },
+    {
+      "title": "Tune Spark Configuration",
+      "text": "%spark.conf\nspark.submit.deployMode client",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-16 07:07:02.969",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/text",
+        "fontSize": 9.0,
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.io.IOException: Can not change interpreter properties when interpreter process has already been launched\n\tat org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterGroupProperties(InterpreterSetting.java:946)\n\tat org.apache.zeppelin.interpreter.ConfInterpreter.interpret(ConfInterpreter.java:72)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:486)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:71)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.FIFOScheduler.lambda$runJobInScheduler$0(FIFOScheduler.java:42)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642313895923_2047013166",
+      "id": "paragraph_1642313895923_2047013166",
+      "dateCreated": "2022-01-16 06:18:15.923",
+      "dateStarted": "2022-01-16 06:56:16.735",
+      "dateFinished": "2022-01-16 06:56:16.739",
+      "status": "ERROR"
+    },
+    {
+      "text": "%spark.conf\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-16 06:53:12.003",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642315992003_516582486",
+      "id": "paragraph_1642315992003_516582486",
+      "dateCreated": "2022-01-16 06:53:12.003",
+      "status": "READY"
+    }
+  ],
+  "name": "case-study-adidas",
+  "id": "2GSN9SU6G",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {}
+}
